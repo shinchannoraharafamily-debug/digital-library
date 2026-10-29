@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2345">
+  <title>Digital Library | Study Today, Build Tomorrow</title>
+  <style>
+    :root{--navy:#0b2345;--blue:#123d70;--gold:#ffc83d;--cream:#f7f9fc;--ink:#172338;--muted:#5e6b7d}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{color:inherit}
+    header{background:var(--navy);color:#fff;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .brand{font-weight:800;font-size:1.15rem}.brand span{color:var(--gold)}
+    nav{display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem}
+    nav a{text-decoration:none;color:#fff}
+    .hero{padding:56px 5%;background:linear-gradient(120deg,#091d38,#174778);color:#fff}
+    .hero-inner{max-width:1050px;margin:auto}
+    .eyebrow{color:var(--gold);font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:.8rem}
+    h1{font-size:clamp(2.1rem,7vw,3.7rem);line-height:1.1;margin:10px 0}
+    h2{font-size:clamp(1.5rem,5vw,2.1rem);line-height:1.2;margin:0 0 12px}
+    .hero p{max-width:620px;color:#e4ecf7}
+    .buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .btn{display:inline-block;border:0;border-radius:10px;padding:12px 17px;background:var(--gold);color:#172338;font-weight:700;text-decoration:none;cursor:pointer}
+    .btn.secondary{background:transparent;border:1px solid #cbd7e7;color:#fff}
+    section{padding:44px 5%}
+    .wrap{max-width:1050px;margin:auto}
+    .sub{color:var(--muted);margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;margin-top:22px}
+    .card{border:1px solid #e0e7f0;border-radius:15px;padding:20px;background:#fff;box-shadow:0 5px 18px rgba(12,35,69,.05)}
+    .icon{font-size:1.8rem}
+    .soft{background:var(--cream)}
+    .price{font-size:1.7rem;font-weight:800;color:var(--blue);margin:8px 0}
+    ul{padding-left:20px}
+    form{display:grid;gap:12px}
+    label{font-weight:700;font-size:.94rem}
+    input,select,textarea{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:9px;font:inherit;background:#fff}
+    textarea{min-height:90px;resize:vertical}
+    .form-note{font-size:.88rem;color:var(--muted)}
+    .location-box{border-radius:14px;background:#eaf1f9;padding:22px}
+    footer{background:var(--navy);color:#dce6f3;padding:24px 5%;text-align:center;font-size:.9rem}
+    .notice{padding:12px;border-radius:10px;background:#fff7d8;color:#644c00;font-size:.9rem}
+    @media(max-width:520px){header{align-items:flex-start}nav{gap:10px;font-size:.84rem}.hero{padding-top:42px;padding-bottom:42px}section{padding-top:34px;padding-bottom:34px}.btn{width:100%;text-align:center}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">📚 Digital <span>Library</span></div>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a><a href="#facilities">Facilities</a><a href="#fees">Fees</a><a href="#location">Location</a><a href="#booking">Book a Seat</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Study Today • Build Tomorrow</div>
+      <h1>Your peaceful place to study.</h1>
+      <p>A calm and comfortable reading room for students preparing for exams, learning new skills, and working toward their goals.</p>
+      <div class="buttons">
+        <a class="btn" href="#booking">📅 Request a Seat</a>
+        <a class="btn secondary" href="#fees">View Membership & Fees</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>Welcome to Digital Library</h2>
+      <p class="sub">A focused study space designed to help you make the most of your study time.</p>
+      <div class="grid">
+        <article class="card"><div class="icon">🤫</div><h3>Peaceful Environment</h3><p>Enjoy a study-friendly atmosphere with fewer distractions.</p></article>
+        <article class="card"><div class="icon">🪑</div><h3>Study Seats</h3><p>Ask about available seats and your preferred study timing.</p></article>
+        <article class="card"><div class="icon">🕒</div><h3>Flexible Plans</h3><p>Choose a membership plan that fits your schedule.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="facilities">
+    <div class="wrap">
+      <h2>Facilities</h2>
+      <p class="sub">Edit this list to match the facilities your library actually provides.</p>
+      <div class="grid">
+        <article class="card"><div class="icon">💺</div><h3>Comfortable Seating</h3><p>Dedicated space for focused individual study.</p></article>
+        <article class="card"><div class="icon">📶</div><h3>Wi-Fi</h3><p>Update this description if Wi-Fi is available at your library.</p></article>
+        <article class="card"><div class="icon">💡</div><h3>Study Lighting</h3><p>A well-lit place to read, revise, and prepare.</p></article>
+        <article class="card"><div class="icon">🧹</div><h3>Clean Study Space</h3><p>Help students feel comfortable during study hours.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="fees">
+    <div class="wrap">
+      <h2>Membership & Fees</h2>
+      <p class="sub">Sample prices only—change them to your real fees before publishing.</p>
+      <div class="grid">
+        <article class="card"><h3>Daily Pass</h3><div class="price">₹50 <small>/ day</small></div><p>For a one-day study session.</p><a class="btn" href="#membership">Choose Plan</a></article>
+        <article class="card"><h3>Monthly Plan</h3><div class="price">₹800 <small>/ month</small></div><p>For regular study sessions.</p><a class="btn" href="#membership">Choose Plan</a></article>
+        <article class="card"><h3>3-Month Plan</h3><div class="price">₹2,100 <small>/ 3 months</small></div><p>For longer-term preparation.</p><a class="btn" href="#membership">Choose Plan</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="membership">
+    <div class="wrap">
+      <h2>Membership Registration</h2>
+      <p class="sub">Fill this form to send a membership enquiry through WhatsApp.</p>
+      <form id="memberForm">
+        <div><label for="mname">Student name</label><input id="mname" required placeholder="Enter your full name"></div>
+        <div><label for="mphone">Phone number</label><input id="mphone" required inputmode="tel" placeholder="Your phone number"></div>
+        <div><label for="mplan">Membership plan</label><select id="mplan"><option>Daily Pass - ₹50/day (sample)</option><option>Monthly - ₹800/month (sample)</option><option>3 Months - ₹2,100 (sample)</option><option>Ask about fees</option></select></div>
+        <div><label for="mmessage">Message (optional)</label><textarea id="mmessage" placeholder="Any question or preferred timing"></textarea></div>
+        <button class="btn" type="submit">Send Membership Enquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="booking">
+    <div class="wrap">
+      <h2>Request a Study Seat</h2>
+      <p class="sub">This sends a booking request to the library. A seat is not confirmed until the library replies.</p>
+      <form id="seatForm">
+        <div><label for="sname">Student name</label><input id="sname" required placeholder="Enter your full name"></div>
+        <div><label for="sphone">Phone number</label><input id="sphone" required inputmode="tel" placeholder="Your phone number"></div>
+        <div><label for="sdate">Preferred date</label><input id="sdate" type="date" required></div>
+        <div><label for="stime">Preferred time</label><select id="stime"><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Full day</option></select></div>
+        <div><label for="smessage">Extra details (optional)</label><textarea id="smessage" placeholder="Preferred seat or questions"></textarea></div>
+        <button class="btn" type="submit">Send Seat Booking Request</button>
+      </form>
+      <p class="form-note">Note: This starter website does not automatically check live seat availability or take payments.</p>
+    </div>
+  </section>
+
+  <section class="soft" id="location">
+    <div class="wrap">
+      <h2>Find Our Library</h2>
+      <div class="location-box">
+        <h3>📍 Digital Library</h3>
+        <p><strong>Address:</strong> Replace this line with your full library address.</p>
+        <p><strong>Opening hours:</strong> Add your real opening and closing time.</p>
+        <p><strong>Contact:</strong> Add your library phone number.</p>
+        <a class="btn" href="https://maps.google.com/" target="_blank" rel="noopener">Open Google Maps</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>📚 <strong>Digital Library</strong> — Study Today • Build Tomorrow</div>
+  <div>© <span id="year"></span> Digital Library. All rights reserved.</div>
+</footer>
+
+<script>
+  // IMPORTANT: Replace this with your WhatsApp number, including country code.
+  // India example format: 91 followed by your 10-digit number. Do not include + or spaces.
+  const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+
+  function sendWhatsApp(message) {
+    if (WHATSAPP_NUMBER.includes("X")) {
+      alert("Pehle website code mein WHATSAPP_NUMBER ko apne library ke WhatsApp number se replace karein.");
+      return;
+    }
+    const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+    window.open(url, "_blank", "noopener");
+  }
+
+  document.getElementById("memberForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const message = "Digital Library - Membership Enquiry\nName: " + document.getElementById("mname").value +
+      "\nPhone: " + document.getElementById("mphone").value +
+      "\nPlan: " + document.getElementById("mplan").value +
+      "\nMessage: " + document.getElementById("mmessage").value;
+    sendWhatsApp(message);
+  });
+
+  document.getElementById("seatForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const message = "Digital Library - Seat Booking Request\nName: " + document.getElementById("sname").value +
+      "\nPhone: " + document.getElementById("sphone").value +
+      "\nDate: " + document.getElementById("sdate").value +
+      "\nPreferred time: " + document.getElementById("stime").value +
+      "\nDetails: " + document.getElementById("smessage").value +
+      "\nPlease confirm availability.";
+    sendWhatsApp(message);
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("sdate").min = new Date().toISOString().split("T")[0];
+</script>
+</body>
+</html>
